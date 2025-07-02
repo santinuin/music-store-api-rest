@@ -6,6 +6,7 @@ import com.santinuin.musicstore.music_store_api_rest.domain.model.Instrumento;
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Resena;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.InstrumentoRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.ResenaRepository;
+import com.santinuin.musicstore.music_store_api_rest.domain.service.ResenaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,16 +17,15 @@ import java.util.stream.Collectors;
 
 @Service
 @Transactional
-public class ResenaService {
+public class ResenaServiceImpl implements ResenaService {
 
     private final ResenaRepository resenaRepository;
     private final InstrumentoRepository instrumentoRepository;
     private final ResenaMapper resenaMapper;
 
-    @Autowired
-    public ResenaService(ResenaRepository resenaRepository,
-                         InstrumentoRepository instrumentoRepository,
-                         ResenaMapper resenaMapper) {
+    public ResenaServiceImpl(ResenaRepository resenaRepository,
+                             InstrumentoRepository instrumentoRepository,
+                             ResenaMapper resenaMapper) {
         this.resenaRepository = resenaRepository;
         this.instrumentoRepository = instrumentoRepository;
         this.resenaMapper = resenaMapper;

@@ -4,7 +4,7 @@ import com.santinuin.musicstore.music_store_api_rest.application.dto.CategoriaDT
 import com.santinuin.musicstore.music_store_api_rest.application.mapper.CategoriaMapper;
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Categoria;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.CategoriaRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.santinuin.musicstore.music_store_api_rest.domain.service.CategoriaService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,13 +14,12 @@ import java.util.stream.Collectors;
 
 @Service
 @Transactional
-public class CategoriaService {
+public class CategoriaServiceImpl implements CategoriaService {
 
     private final CategoriaRepository categoriaRepository;
     private final CategoriaMapper categoriaMapper;
 
-    @Autowired
-    public CategoriaService(CategoriaRepository categoriaRepository, CategoriaMapper categoriaMapper) {
+    public CategoriaServiceImpl(CategoriaRepository categoriaRepository, CategoriaMapper categoriaMapper) {
         this.categoriaRepository = categoriaRepository;
         this.categoriaMapper = categoriaMapper;
     }

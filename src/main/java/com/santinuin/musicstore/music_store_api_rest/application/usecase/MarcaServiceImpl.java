@@ -4,6 +4,7 @@ import com.santinuin.musicstore.music_store_api_rest.application.dto.MarcaDTO;
 import com.santinuin.musicstore.music_store_api_rest.application.mapper.MarcaMapper;
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Marca;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.MarcaRepository;
+import com.santinuin.musicstore.music_store_api_rest.domain.service.MarcaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,13 +15,12 @@ import java.util.stream.Collectors;
 
 @Service
 @Transactional
-public class MarcaService {
+public class MarcaServiceImpl implements MarcaService {
 
     private final MarcaRepository marcaRepository;
     private final MarcaMapper marcaMapper;
 
-    @Autowired
-    public MarcaService(MarcaRepository marcaRepository, MarcaMapper marcaMapper) {
+    public MarcaServiceImpl(MarcaRepository marcaRepository, MarcaMapper marcaMapper) {
         this.marcaRepository = marcaRepository;
         this.marcaMapper = marcaMapper;
     }

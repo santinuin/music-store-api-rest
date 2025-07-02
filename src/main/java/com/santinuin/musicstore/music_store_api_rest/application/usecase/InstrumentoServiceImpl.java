@@ -10,6 +10,7 @@ import com.santinuin.musicstore.music_store_api_rest.domain.repository.Categoria
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.InstrumentoRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.MarcaRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.ResenaRepository;
+import com.santinuin.musicstore.music_store_api_rest.domain.service.InstrumentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,7 +22,7 @@ import java.util.stream.Collectors;
 
 @Service
 @Transactional
-public class InstrumentoService {
+public class InstrumentoServiceImpl implements InstrumentoService {
 
     private final InstrumentoRepository instrumentoRepository;
     private final MarcaRepository marcaRepository;
@@ -29,12 +30,11 @@ public class InstrumentoService {
     private final ResenaRepository resenaRepository;
     private final InstrumentoMapper instrumentoMapper;
 
-    @Autowired
-    public InstrumentoService(InstrumentoRepository instrumentoRepository,
-                              MarcaRepository marcaRepository,
-                              CategoriaRepository categoriaRepository,
-                              ResenaRepository resenaRepository,
-                              InstrumentoMapper instrumentoMapper) {
+    public InstrumentoServiceImpl(InstrumentoRepository instrumentoRepository,
+                                  MarcaRepository marcaRepository,
+                                  CategoriaRepository categoriaRepository,
+                                  ResenaRepository resenaRepository,
+                                  InstrumentoMapper instrumentoMapper) {
         this.instrumentoRepository = instrumentoRepository;
         this.marcaRepository = marcaRepository;
         this.categoriaRepository = categoriaRepository;
