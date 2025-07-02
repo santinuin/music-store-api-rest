@@ -1,7 +1,7 @@
 package com.santinuin.musicstore.music_store_api_rest.infrastructure.web.controller;
 
 import com.santinuin.musicstore.music_store_api_rest.application.dto.CategoriaDTO;
-import com.santinuin.musicstore.music_store_api_rest.application.usecase.CategoriaService;
+import com.santinuin.musicstore.music_store_api_rest.domain.service.CategoriaService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
