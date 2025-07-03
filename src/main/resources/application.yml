@@ -10,7 +10,7 @@ spring:
     url: jdbc:h2:mem:musicstore
     driver-class-name: org.h2.Driver
     username: santinuin
-    password:
+    password: password
 
   # Configuración JPA
   jpa:
