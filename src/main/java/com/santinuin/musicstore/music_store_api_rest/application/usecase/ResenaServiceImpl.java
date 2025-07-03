@@ -7,7 +7,6 @@ import com.santinuin.musicstore.music_store_api_rest.domain.model.Resena;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.InstrumentoRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.ResenaRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.service.ResenaService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

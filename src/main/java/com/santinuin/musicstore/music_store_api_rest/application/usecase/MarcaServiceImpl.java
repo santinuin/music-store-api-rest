@@ -5,7 +5,6 @@ import com.santinuin.musicstore.music_store_api_rest.application.mapper.MarcaMap
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Marca;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.MarcaRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.service.MarcaService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
