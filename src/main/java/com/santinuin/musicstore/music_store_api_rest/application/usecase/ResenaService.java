@@ -1,4 +1,4 @@
-package com.santinuin.musicstore.music_store_api_rest.domain.service;
+package com.santinuin.musicstore.music_store_api_rest.application.usecase;
 
 import com.santinuin.musicstore.music_store_api_rest.application.dto.ResenaDTO;
 

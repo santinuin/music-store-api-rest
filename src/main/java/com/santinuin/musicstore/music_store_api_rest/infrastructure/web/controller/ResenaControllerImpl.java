@@ -1,7 +1,7 @@
 package com.santinuin.musicstore.music_store_api_rest.infrastructure.web.controller;
 
 import com.santinuin.musicstore.music_store_api_rest.application.dto.ResenaDTO;
-import com.santinuin.musicstore.music_store_api_rest.domain.service.ResenaService;
+import com.santinuin.musicstore.music_store_api_rest.application.usecase.ResenaService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

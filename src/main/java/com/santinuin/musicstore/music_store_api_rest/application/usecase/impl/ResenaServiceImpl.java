@@ -1,12 +1,12 @@
-package com.santinuin.musicstore.music_store_api_rest.application.usecase;
+package com.santinuin.musicstore.music_store_api_rest.application.usecase.impl;
 
 import com.santinuin.musicstore.music_store_api_rest.application.dto.ResenaDTO;
 import com.santinuin.musicstore.music_store_api_rest.application.mapper.ResenaMapper;
+import com.santinuin.musicstore.music_store_api_rest.application.usecase.ResenaService;
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Instrumento;
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Resena;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.InstrumentoRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.ResenaRepository;
-import com.santinuin.musicstore.music_store_api_rest.domain.service.ResenaService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

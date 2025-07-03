@@ -1,8 +1,9 @@
-package com.santinuin.musicstore.music_store_api_rest.application.usecase;
+package com.santinuin.musicstore.music_store_api_rest.application.usecase.impl;
 
 import com.santinuin.musicstore.music_store_api_rest.application.dto.InstrumentoCreateDTO;
 import com.santinuin.musicstore.music_store_api_rest.application.dto.InstrumentoDTO;
 import com.santinuin.musicstore.music_store_api_rest.application.mapper.InstrumentoMapper;
+import com.santinuin.musicstore.music_store_api_rest.application.usecase.InstrumentoService;
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Categoria;
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Instrumento;
 import com.santinuin.musicstore.music_store_api_rest.domain.model.Marca;
@@ -10,7 +11,6 @@ import com.santinuin.musicstore.music_store_api_rest.domain.repository.Categoria
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.InstrumentoRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.MarcaRepository;
 import com.santinuin.musicstore.music_store_api_rest.domain.repository.ResenaRepository;
-import com.santinuin.musicstore.music_store_api_rest.domain.service.InstrumentoService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

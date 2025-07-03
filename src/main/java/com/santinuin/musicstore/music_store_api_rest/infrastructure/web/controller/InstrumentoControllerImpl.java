@@ -2,7 +2,7 @@ package com.santinuin.musicstore.music_store_api_rest.infrastructure.web.control
 
 import com.santinuin.musicstore.music_store_api_rest.application.dto.InstrumentoCreateDTO;
 import com.santinuin.musicstore.music_store_api_rest.application.dto.InstrumentoDTO;
-import com.santinuin.musicstore.music_store_api_rest.domain.service.InstrumentoService;
+import com.santinuin.musicstore.music_store_api_rest.application.usecase.InstrumentoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
